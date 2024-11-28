@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Upload Note</title>
+</head>
+<body>
+    <h1>Upload Note</h1>
+    <form action="/write" method="POST" enctype="multipart/form-data">
+        <label for="note_name">Note Name:</label>
+        <input type="text" id="note_name" name="note_name" required><br><br>
+        
+        <label for="note">Note Content:</label>
+        <textarea id="note" name="note" rows="10" cols="30" required></textarea><br><br>
+        
+        <button type="submit">Upload Note</button>
+    </form>
+</body>
+</html>
